@@ -1,6 +1,6 @@
 ﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+    padding-top: 90px;
+    padding-bottom: 20px;/*body referenced twice - delete this and combine?*/
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -24,7 +24,7 @@ textarea {
 }
 
 span.field-validation-error {
-    color: red;
+    color: red; /*not showing red on page? not supposed to be bootstrap - maybe try to find in bootstrap*/
     font-weight: bold;
 }
 
@@ -98,3 +98,50 @@ h6,
     -ms-border-radius: 9px;
     border-radius: 9px;
 }
+
+/*Page-level style*/
+
+.gigs {
+    list-style: none;
+}
+
+.gigs > li {
+    position: relative;
+    margin-bottom: 30px
+}
+
+.gigs > li .date {
+    background: red;
+    color: white;
+    text-align: center;
+    width: 60px;
+    border-radius: 8px;
+}
+
+.gigs > li .date .month {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 2px 6px;
+}
+
+    .gigs > li .date .day {
+        background: #f7f7f7;
+        color: #333;
+        font-size: 20px;
+        padding: 6px 12px;
+    }
+.gigs > li .details {
+    position: absolute;
+    top: 0;
+    left: 70px;
+}
+
+    .gigs > li .details .artist{
+        font-weight: bold;
+        display: block;
+    }
+
+    .gigs > li .details .artist {
+        font-size: 15px;
+    }
