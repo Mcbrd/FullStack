@@ -24,7 +24,7 @@ textarea {
 }
 
 span.field-validation-error {
-    color: red; /*not showing red on page? not supposed to be bootstrap - maybe try to find in bootstrap*/
+    color: red; /*not showing red on page sometimes - cached? */
     font-weight: bold;
 }
 
